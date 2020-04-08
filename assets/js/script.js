@@ -10,13 +10,13 @@ const coinFigure = document.querySelector('.coin figure');
 const buttons = Array.from(document.querySelectorAll('.toss-call li'));
 
 // Initial function which sets the stage for game to initial state
-function init(buttons, playerScore, computerScore, playerSelection, computerSelection) {
+function init(buttons, playerScore, computerScore) {
 	buttons.forEach((button) => button.addEventListener('click', flip));
 	playerScore.innerText = "0";
 	computerScore.innerText = "0";
 }
 
-init(buttons, playerScore, computerScore, playerSelection, computerSelection);
+init(buttons, playerScore, computerScore);
 
 // Flip function to calculate random behaviour of a coin toss 
 function flip() {
